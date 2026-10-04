@@ -1,6 +1,10 @@
 { pkgs, username, homeDirectory, ... }:
 
 {
+  imports = [
+    "./tmux.nix"
+  ];
+
   home.username = username;
   home.homeDirectory = homeDirectory;
 
@@ -23,12 +27,4 @@
     settings.user.name = "Roger Padrell";
     settings.user.email = "padrell.roger@gmail.com";
   };
-
-  programs.zsh.enable = true;
-
-  home.sessionVariables = {
-    EDITOR = "hx";
-  };
 }
-
-
