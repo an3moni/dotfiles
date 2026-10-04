@@ -2,7 +2,8 @@
 
 {
   imports = [
-    "./tmux.nix"
+    ./tmux.nix
+    ./zsh.nix
   ];
 
   home.username = username;
