@@ -25,5 +25,5 @@ _darcs
 ^scripts$
 ^scripts/
 
-^assets$
-^assets/
+^nix-config$
+^nix-config/
