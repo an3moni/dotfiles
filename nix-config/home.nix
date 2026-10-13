@@ -19,9 +19,20 @@
     jq
     tree
     htop
+    yazi
     helix
+    distroshelf
+    gh
   ];
-
+  services.podman.enable = true;
+  programs.distrobox.enable = true;
+  programs.ghostty =  {
+    enable = true;
+    settings = {
+      gtk-titlebar = false;
+      window-decoration = false;
+    };
+  };
   programs.git = {
     enable = true;
 
