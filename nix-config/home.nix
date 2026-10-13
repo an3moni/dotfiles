@@ -22,8 +22,13 @@
     yazi
     helix
     distroshelf
-    gh
   ];
+  programs.gh = {
+    enable = true;
+    gitCredentialHelper = {
+      enable = true;
+    };
+  };
   services.podman.enable = true;
   programs.distrobox.enable = true;
   programs.ghostty =  {
