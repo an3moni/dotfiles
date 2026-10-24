@@ -23,6 +23,8 @@
     helix
     distroshelf
     localsend
+    gnomeExtensions.caffeine
+    gnomeExtensions.paperwm
   ];
   programs.gh = {
     enable = true;
@@ -44,5 +46,14 @@
 
     settings.user.name = "Roger Padrell";
     settings.user.email = "padrell.roger@gmail.com";
+  };
+  dconf.settings = {
+    "org/gnome/shell" = {
+      disable-user-extensions = false;
+      enabled-extensions = [
+        "caffeine@patapon.info"
+        "paperwm@paperwm.github.com"
+      ];
+    };
   };
 }
