@@ -22,6 +22,7 @@
     yazi
     helix
     distroshelf
+    localsend
   ];
   programs.gh = {
     enable = true;
